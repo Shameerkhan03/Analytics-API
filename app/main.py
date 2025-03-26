@@ -13,3 +13,8 @@ def read_root():
 @app.get("/items/{id}")
 def read_item(id: int, q: Union[str, None] = None):
     return {"item_id": id, "q": q}
+
+
+@app.get("/healthz")
+def read_api_health():
+    return {"status": "ok"}
