@@ -1,0 +1,1 @@
+*.sh text eol=lf # to tell git that leave it as lf don't change it to crlf
